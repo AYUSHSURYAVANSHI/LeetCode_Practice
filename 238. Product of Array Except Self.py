@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
@@ -15,4 +16,23 @@ class Solution:
         # Calculate result array
         result = [left[i] * right[i] for i in range(n)]
        
+=======
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        left = [1] * n
+        right = [1] * n
+        
+        # Calculate left prefix product
+        for i in range(1, n):
+            left[i] = left[i - 1] * nums[i - 1]
+
+        # Calculate right suffix product
+        for i in range(n - 2, -1, -1):
+            right[i] = right[i + 1] * nums[i + 1]
+
+        # Calculate result array
+        result = [left[i] * right[i] for i in range(n)]
+       
+>>>>>>> 6565d284220dea1aa3de84faf61b1150f2d66938
         return result
