@@ -39,7 +39,7 @@ Within each difficulty folder, the problems are further organized by topic:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/LeetCode_Practice.git
+    git clone https://github.com/AYUSHSURYAVANSHI/LeetCode_Practice
     cd LeetCode_Practice
     ```
 
@@ -83,6 +83,6 @@ I welcome contributions! If you have a better solution or an improvement to an e
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at [surywanshiayush@gmail.com](surywanshiayush@gmail.com).
+If you have any questions or suggestions, feel free to reach out to me at [surywanshiayush@gmail.com].
 
 Happy coding!
