@@ -14,7 +14,7 @@ Welcome to my LeetCode Practice repository! This repo contains my solutions to v
 
 ## Introduction
 
-LeetCode is a fantastic platform for honing your problem-solving skills and preparing for technical interviews. This repository is my personal collection of solutions to LeetCode problems, which I continuously update as I solve more problems. Each solution includes the problem statement, the approach I used, and the code implementation.
+LeetCode is a fantastic platform for honing your problem-solving skills and preparing for technical interviews. This repository is my collection of solutions to LeetCode problems, which I continuously update as I solve more problems. Each solution includes the problem statement, the approach I used, and the code implementation.
 
 ## Structure
 
@@ -83,6 +83,6 @@ I welcome contributions! If you have a better solution or an improvement to an e
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com).
+If you have any questions or suggestions, feel free to reach out to me at [your.email@example.com](surywanshiayush@gmail.com).
 
 Happy coding!
