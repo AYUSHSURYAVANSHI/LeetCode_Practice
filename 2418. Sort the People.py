@@ -1,18 +1,13 @@
-<<<<<<< HEAD
 class Solution:
-    def sortPeople(self, n: List[str], h: List[int]) -> List[str]:
-        d = dict(zip(h,n))
-        c = []
-        h.sort(reverse=True)
-        for i in h:
-            c.append(d[i])
-=======
-class Solution:
-    def sortPeople(self, n: List[str], h: List[int]) -> List[str]:
-        d = dict(zip(h,n))
-        c = []
-        h.sort(reverse=True)
-        for i in h:
-            c.append(d[i])
->>>>>>> 973c2521232a2cdb9a3c2784c3886fa4feeff66d
-        return c
+    def sortPeople(self, names: list[str], heights: list[int]) -> list[str]:
+        n: int = len(names)
+        mapping: dict[int, str] = {}  # height -> name (heights are distinct)
+        for ind in range(n):
+            mapping[heights[ind]] = names[ind]
+
+        heights.sort(reverse=True)
+        for ind in range(n):
+            h: int = heights[ind]
+            names[ind] = mapping[h]
+
+        return names
