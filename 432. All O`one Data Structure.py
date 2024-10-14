@@ -23,10 +23,4 @@ class AllOne:
             if self.myDict[key] == maxVal:
                 return key
 
-    def getMinKey(self) -> str:
-        if not self.myDict:
-            return ""
-        minVal = min(self.myDict.values())
-        for key in self.myDict.keys():
-            if self.myDict[key] == minVal:
-                return key
+    
