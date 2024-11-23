@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Solution:
     def maximumSubarraySum(self, nums: List[int], k: int) -> int:
         n = len(nums)
@@ -22,4 +23,30 @@ class Solution:
             if i >= k - 1 and len(mp) == k:
                 max_sum = max(max_sum, ws)
 
+=======
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        mp = defaultdict(int)
+        ws = 0
+        max_sum = 0
+
+        for i in range(n):
+            # Add the current element to the window
+            mp[nums[i]] += 1
+            ws += nums[i]
+
+            # If the window size exceeds 'k', slide the window
+            if i >= k:
+                le = nums[i - k]
+                mp[le] -= 1
+                ws -= le
+                if mp[le] == 0:
+                    del mp[le]
+
+            # Check if the window has exactly 'k' distinct elements
+            if i >= k - 1 and len(mp) == k:
+                max_sum = max(max_sum, ws)
+
+>>>>>>> d6f8e7f5bf95ec30dd893de1512f2b076cbb6786
         return max_sum
