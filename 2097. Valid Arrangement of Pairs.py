@@ -16,7 +16,6 @@ class Solution:
             if out_degree[node] > in_degree[node]:
                 start_node = node
                 break
-  
         
         # Step 3: Hierholzer's algorithm to find the Eulerian path
         stack = [start_node]
