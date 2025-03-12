@@ -1,26 +1,20 @@
-<<<<<<< HEAD
 class Solution:
     def maximumCount(self, nums: List[int]) -> int:
-        pos = 0
-        neg = 0
-        for i in nums:
-            if i < 0:
-                neg += 1
-            elif i> 0:
-                pos += 1
-        return max(pos,neg)
+        neg_count = self.binary_search(nums, 0) 
+        pos_count = len(nums) - self.binary_search(nums, 1)
+        return max(neg_count, pos_count)
 
-=======
-class Solution:
-    def maximumCount(self, nums: List[int]) -> int:
-        pos = 0
-        neg = 0
-        for i in nums:
-            if i < 0:
-                neg += 1
-            elif i> 0:
-                pos += 1
-        return max(pos,neg)
-
->>>>>>> 1d9420b076e7346079e9d42c8776d2fbfb052808
-    
+    def binary_search(self, nums, target):
+        left, right = 0, len(nums) - 1
+        result = len(nums)
+        
+        while left <= right:
+            mid = (left + right) // 2
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                result = mid
+                right = mid - 1
+        
+        return result
+        
